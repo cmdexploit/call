@@ -1,0 +1,91 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, form, input, button, textarea {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #6dd5fa, #ffffff, #fbc2eb);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    color: #333;
+}
+
+/* Container styling */
+.container {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    max-width: 700px;
+    width: 100%;
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Container hover effect */
+.container:hover {
+    transform: translateY(-5px);
+}
+
+/* Headings styling */
+h1, h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #ff4b1f;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Input and textarea styling */
+input, textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #555;
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Input and textarea focus styling */
+input:focus, textarea:focus {
+    border-color: #ff4b1f;
+    box-shadow: 0px 0px 10px rgba(255, 75, 31, 0.3);
+    outline: none;
+}
+
+/* Button styling */
+button {
+    padding: 12px 20px;
+    background-color: #ff4b1f;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #ff6f3d;
+    box-shadow: 0px 4px 15px rgba(255, 75, 31, 0.4);
+}
+
+/* Code block styling */
+code {
+    background-color: #f8f9fa;
+    padding: 10px;
+    border-radius: 6px;
+    display: block;
+    margin-top: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}

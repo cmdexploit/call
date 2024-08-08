@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Documentation</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>API Documentation</h1>
+        <h2>/auth</h2>
+        <p>Method: GET</p>
+        <p>Parameters: <code>name</code> (string, required)</p>
+        <p>Response: Message indicating success and instructions to use the token. The actual JWT token will not be shown directly for security reasons.</p>
+
+        <h2>/api/normal</h2>
+        <p>Method: GET or POST OR FETCH or UPDATE</p>
+        <p>Response: Message for normal users.</p>
+
+        <h2>/api/admin</h2>
+        <p>Method: GET or POST or FETCH or UPDATE</p>
+        <p>Response: Message for admins.</p>
+    </div>
+</body>
+</html>

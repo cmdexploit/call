@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hidden Flag Challenge</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 100px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 2em;
+            color: #4A90E2;
+        }
+
+        .flag {
+            font-size: 1.5em;
+            color: #27AE60;
+            background: #EAF8E6;
+            padding: 10px;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        .reveal-btn {
+            background-color: #4A90E2;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .reveal-btn:hover {
+            background-color: #357ABD;
+        }
+        .container a{
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🏴 Hidden Flag Challenge 🏴</h1>
+        <p>Can you find the hidden flag?</p>
+        <button class="reveal-btn" onclick="revealFlag()">Reveal Flag</button>
+        <div id="flag" class="flag" style="display:none;">
+            🌟 Flag: CTF{B2#%D9#-N7T9L-&=?1S!T7WDP=5]3=3AD,&TA;D!T,'(C)```} 🌟
+        </div>
+        <p>© <a href="http://linkedin.com/in/santhoshkumarcyber" target="_blank" rel="noopener noreferrer"> cmdexploit </a>@2024 Hidden Challenges. All rights reserved.</p>
+    </div>
+
+    <script>
+        function revealFlag() {
+            document.getElementById('flag').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
